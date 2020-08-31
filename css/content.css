@@ -1,0 +1,80 @@
+body{margin-top: 125px;background-color:rgb(95, 94, 94);height: 100%;min-height: 100%;}
+header{height: 125px;min-width: 710px;background-color: black;position: absolute;top: 0;left: 0;right: 0;bottom: auto;}
+#logo{width: 180px;height: 100%;margin-left: 9.8%;}
+main{
+    min-height: 600px;
+    min-width: 700px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(61, 61, 61);
+}
+footer{height: 40%;min-width: 710px;background-color: black;position: absolute;bottom: auto;left: 0;right: 0;}
+#left{float: left;}
+#right{float: right; margin-right: 15px;}
+#colonne{min-height:265px;max-height:265px;display: flex;}
+#source{height: 30px;margin-top: -7px;}
+#adresse{width: 33%;margin-left: 15px;margin-right: 15px;}
+#article{width: 40%;margin-right: 15px;}
+
+input{margin-top: 5px;margin-right: 25px;border-radius: 5px;width: 225px;}
+p{margin-left: 15px;}
+h2,h1{margin-left: 15px;}
+button{margin-left: 15px;margin-top: 10px;}
+.block{display: inline-block;}
+.ecart{margin-left: 195px;}
+.ecart2{margin-left: 190px;}
+button:hover{background-color: rgb(88, 191, 255);}
+header{height: 125px;}
+.sumup{display: flex;margin-top: -10px;}
+.ppt{width: 50px;height: 50px;float: left;margin-top: 45px;}
+.icon{width: 20px;height: 20px;}
+#Rsociaux p{margin-left: unset;}
+#article .title1{margin-left: unset;}
+a{text-decoration: none;}
+#menu{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#slideshow{
+    float: right;
+    background-color: white;
+    height: 400px;
+    width: 50%;
+    position: relative;
+    margin:  20px auto;
+    overflow: hidden;
+}
+
+#img {
+    display: inline;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;            
+	padding: 0;
+}
+
+#description{
+    float: left;
+    height: 400px;
+    width: 50%;
+}
+
+textarea{
+    height: 150px;
+    width: 75%;
+    margin-left: 15px;
+    resize: none;
+}
+
+button{
+    background-color: black;
+    height: 30px;
+    width: 100px;
+    border-color: white;
+    border-style: groove;
+    border-radius: 5px;
+}
