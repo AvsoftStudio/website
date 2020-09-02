@@ -1,5 +1,5 @@
 /*Fonctionnalités CSS commune à toute les pages*/
-body{background-image: url("/data/photo/fond.gif");}
+body{background-image: url("../data/photo/fond.gif");}
 header{background-color: black;opacity: 0.75;}
 footer{
    display: grid;
