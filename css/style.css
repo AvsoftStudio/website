@@ -15,8 +15,8 @@ footer h5{color: dodgerblue;}
 /*Fonctionnalités CSS de la page Accueil*/
 /*BLOC PRESENTATION*/
 #presentation{display: grid;grid-template-columns: repeat(2, 1fr);width: 80%;margin-right: auto;margin-left: auto;}
-#presentation h1, #presentation p{color: white;margin-left: 25px;margin-right: 15px;}
-#presentation p{font-size: larger;}
+#presentation h1 {color: white;margin-left: 25px;margin-right: 15px; margin-top: 15px;}
+#presentation p{font-size: larger;color: white;margin-left: 25px;margin-right: 15px;}
 #slides h4{color: black;}
 /*BLOC BANDEROLLE*/
 #banderolle{height: 200px;}
