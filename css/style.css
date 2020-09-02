@@ -1,0 +1,40 @@
+/*Fonctionnalités CSS commune à toute les pages*/
+body{background-image: url("/data/photo/fond.gif");}
+header{background-color: black;opacity: 0.75;}
+footer{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+}
+footer section ul li img{width: 75px;height: 75px;overflow-x: hidden;overflow-y: hidden;}
+footer section ul li p{width: 75%;}
+footer h3{color: white;margin-top: 25px;}
+footer p{color: white;}
+footer h5{color: dodgerblue;}
+.blocOpaque {width:100%;height:100%;margin:0px 0px;background-color:black;border:1px solid black;filter:Alpha(opacity=80);-moz-opacity:0.80;opacity: 0.80;}
+/******************************************************************************************************************/
+/*Fonctionnalités CSS de la page Accueil*/
+/*BLOC PRESENTATION*/
+#presentation{display: grid;grid-template-columns: repeat(2, 1fr);width: 80%;margin-right: auto;margin-left: auto;}
+#presentation h1, #presentation p{color: white;margin-left: 25px;margin-right: 15px;}
+#presentation p{font-size: larger;}
+#slides h4{color: black;}
+/*BLOC BANDEROLLE*/
+#banderolle{height: 200px;}
+
+/******************************************************************************************************************/
+/*Fonctionnalités CSS de la page Contact*/
+#contact{
+   margin-top: 10px;
+   margin-bottom: 10px;
+   background-color: black;
+   opacity: 0.95;
+   width: 80%;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+#contact #confirm{margin-bottom: 15px;}
+#contact *{margin-left: 15px;margin-right: 15px;}
+#contact form *{margin-top: 15px;}
+#contact input{width: 50%;}
+#contact textarea{resize: none;height: 200px;margin-bottom: 20px;width: 50%;}

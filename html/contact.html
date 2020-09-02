@@ -1,40 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="../css/content.css"/>
-        <link rel="stylesheet" href="../css/menu.css"/>
-        <link rel="stylesheet" href="../css/fonts.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--Import des fonctionnalités bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <!--Import des fonctionnalités bootstrap-->
+        <link rel="stylesheet" href="/css/style.css"/>
+        <link rel="stylesheet" href="/css/ModifBootstrap.css"/>
+        
         <!--<link rel="icon" href="images/favicon.ico" type="image/x-icon"/>-->
-        <title>Musique et Culture</title>
+        <title>Avsoft Studio - Site officiel</title>
     </head>
-    <header>
-        <img id="logo" src="../data/photo/Logo.png"/>
-        <div id="menu" class="menu">
-            <ul>
-                <li><a href="../index.html">Accueil</a></li>
-                <li><a href="cours.html">Cours</a></li>
-                <li><a href="galerie.html">Galerie</a></li>
-                <li><a href="agenda.html">Agenda</a></li>
-                <li><a href="propos.html">A Propos</a></li>
-                <li><a id="pcourant" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </header>
     <body>
-        <div id="content">
-            <h1 class="title">CONTACT</h1>
-            <form action="mail">
-                <p>*Nom : <span class="ecart"></span> *Prenom : <br/><input type="text"/> <input type="text"/></p>
-
-                <p>*E-mail :<span class="ecart2"></span>Telephone : <br/><input type="email"/> <input type="tel"/></p>
-
-                <p>*Message :</p>
-                <textarea></textarea><br/>
-
-                <button>Envoyer</button>
-            </form>
-        </div>
+        <header>
+            <img src="/data/photo/Logo/Logo.png" alt="Logo_Avsoft" class="rounded" width="150">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" href="/index.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/html/Games.html">GAMES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/html/Softwares.html">SOFTWARES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/Other.html">OTHERS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/AboutUs.html">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">CONTACT</a>
+                </li>
+            </ul>
+        </header>
+        <main id="contact">
+            <h1>CONTACT</h1>
+            <div>
+                <img src="/data/photo/Logo/Logoavecfond.png" alt="Logo_Avsoft" class="rounded" width="50%" height="35%">
+            </div>
+            <center><h4>
+                ..........................................................................................................
+            </h4></center>
+            <div>
+                <form id="formContact">
+                    <input id="name" type="text" name="name" placeholder="Enter your name"/></br>
+                    <input id="mail" type="email" name="mail" placeholder="Mail Adress"/></br>
+                    <input id="subject" type="text" name="subject" placeholder="Subject of the message"/></br>
+                    <textarea name="content" placeholder="Your message..."></textarea>
+                    <button id="confirm" type="button" name="Submit">Submit</button>
+                </form>
+            </div>
+        </main>
+        <h1>Hello, world!</h1>
+        <footer></footer>
     </body>
-    <footer></footer>
+    <script src="/js/contact.js" defer></script>
 </html>

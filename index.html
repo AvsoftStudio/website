@@ -1,87 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, userscalable=no"/>
-        <link rel="stylesheet" href="css/content.css"/>
-        <link rel="stylesheet" href="css/fonts.css"/>
-        <link rel="stylesheet" href="css/menu.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--Import des fonctionnalités bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <!--Import des fonctionnalités bootstrap-->
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/ModifBootstrap.css"/>
         <script src="js/accueil.js" defer></script>
-        <script src="js/test.js" defer></script>
         <!--<link rel="icon" href="images/favicon.ico" type="image/x-icon"/>-->
-        <title>M&C - Accueil</title>
+        <title>Avsoft Studio - Site officiel</title>
     </head>
     <body>
         <header>
-            <a href="data/photo/Logo.png">
-                <img id="logo" src="data/photo/test1.jpg" alt="Logo Musique et Culture" title="Logo M&C"/>
-            </a>
-            <div id="menu">
-                <ul>
-                    <li><a id="pcourant" href="index.html">Accueil</a></li>
-                    <li><a href="html/cours.html">Cours</a></li>
-                    <li><a href="html/galerie.html">Galerie</a></li>
-                    <li><a href="html/agenda.html">Agenda</a></li>
-                    <li><a href="html/propos.html">A Propos</a></li>
-                    <li><a href="html/contact.html">Contact</a></li>
-                </ul>
-            </div>
+            <img src="data/photo/Logo/Logo.png" alt="Logo_Avsoft" class="rounded" width="150">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" href="">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">GAMES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SOFTWARES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">OTHERS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="html/contact.html">CONTACT</a>
+                </li>
+            </ul>
         </header>
         <main>
-            <section id="presentation">
-                <section id="description" class="block">
-                    <h2>Titre de la description</h2>
+            <div id="presentation">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-inner" data-interval="5000">
+                        <div id="slides" class="carousel-item active">
+                            <img src="data/photo/slider/Logo.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div id="slides" class="carousel-item" data-interval="5000">
+                            <img src="data/photo/slider/TheSin.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4>The Sin</h4>
+                            </div>
+                        </div>
+                        <div id="slides" class="carousel-item" data-interval="5000">
+                            <img src="data/photo/slider/RollDice.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4>Roll Dice</h4>
+                            </div>
+                        </div>
+                        <div id="slides" class="carousel-item" data-interval="5000">
+                            <img src="data/photo/slider/TheSin2.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4>Fight in The Sin</h4>
+                            </div>
+                        </div>
+                        <div id="slides" class="carousel-item" data-interval="5000">
+                            <img src="data/photo/slider/Code.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="blocOpaque">
+                    <h1>What is Avsoft Studio ?</h1>
                     <p>
-                       Ceci est un block texte afin de faire une bref description de l'entreprise ou de l'association pour que les gens
-                       puisse avoir un ensemble d'informations sur cette dernière avant de continuer à naviguer sur votre site.
+                        Avsoft studio is a project of development of video games maily PC but also on other supports like Smartphone, iOS, web,
+                        etc...). We develop all types of games from simple FPS to RPG, Strategy, Visual Novel and much more !
                     </p>
-                </section>
-                <section id="slideshow" class="block">
-                    <img id="img" src="data/photo/test1.jpg"/>
-                </section>
-            </section>
-        </main>
+                    <p>
+                        Also we develop on our free time various software to make your life easier during certain activities and that also allows us to
+                        improve our programming in general.
+                    </p>
+                </div>
+            </div>
+            <div id="banderolle" class="blocOpaque">
+                <div>
 
-        <footer>
-            <section id="colonne">
-                <section id="adresse">
-                    <p>Musique et Culture</p>
-                    <p><a href="https://goo.gl/maps/GXoV7BwQerLSwCMU8" target="blank">2 Boulevard de l'Europe<br/>
-                    07240, Vernoux-en-Vivarais</a><br/>
-                    "adresse mail de l'association"<br/>
-                    04.75.06.27.48</p>
-                </section>
-                <section id="article">
-                    <p>Articles récents</p>
-                    <article class="sumup">
-                        <a href="" title="Article1"><img class="ppt" src="data/photo/test1.jpg" alt="photo de présentation"/></a>
-                        <a href="" title="Article1">
-                            <p><span class="title1">Titre de l'article</span><br/><br/>
-                            Ceci est un texte descriptif<br/>
-                            résumant le contenu de l'article<br/>
-                            pour que donner une idée au lecteur</p>
-                        </a>
-                    </article>
-                    <article class="sumup">
-                        <a href="" title="Article2"><img class="ppt" src="data/photo/test1.jpg" alt="photo de présentation"/></a>
-                        <a href="" title="Article2">
-                            <p><span class="title1">Titre de l'article</span><br/><br/>
-                            Ceci est un texte descriptif<br/>
-                            résumant le contenu de l'article<br/>
-                            pour que donner une idée au lecteur</p>
-                        </a>
-                    </article>
-                </section>
-                <section id="Rsociaux">
-                    <p>Réseaux sociaux</p>
-                    <a href=""><img class="icon" src="data/photo/facebook.jpg" alt="Réseau1" title="Réseau1"/></a>
-                    <a href=""><img class="icon" src="data/photo/Twitter.jpg" alt="Réseau2" title="Réseau2"/></a>
-                    <a href=""><img class="icon" src="data/photo/Discord.png" alt="Réseau3" title="Réseau3"/></a>
-                    <a href=""><img class="icon" src="data/photo/itchio.png" alt="Réseau4" title="Réseau4"/></a>
-                </section>
+                </div>
+            </div>
+        </main>
+        <h1>Hello, world!</h1>
+        <footer class="blocOpaque">
+            <section>
+                <h3>WHAT'S UP ?</h3>
+                <hr size="5" color="white" width="80%" align="left">
             </section>
-            <section id="source">
-                <p><span id="left">Janvier 2020: Musique et Culture - All rights reserved</span> <span id="right">Designed by <a href="" target="blank">Avsoft Studio</a></span></p>
+            <section>
+                <h3>IN DEVELOPMENT</h3>
+                <hr size="5" color="white" width="80%" align="left">
+                <ul class="list-unstyled">
+                    <li class="media">
+                      <img src="data/photo/CSE.png" class="mr-3" alt="...">
+                      <div class="media-body">
+                        <h5 class="mt-0 mb-1">CHARACTER SHEET EDITOR</h5>
+                        <p>A software which allows you to create chracter's sheet for RPG games.</p>
+                      </div>
+                    </li>
+                    <hr size="5" color="white" width="80%" align="left">
+                    <li class="media my-4">
+                      <img src="data/photo/Tower2.png" class="mr-3" alt="...">
+                      <div class="media-body">
+                        <h5 class="mt-0 mb-1">HIGHTOWER</h5>
+                        <p>A team of old friends decided to fulfill their childhood dream !<br/>
+                        Climb the HighTower, a dungeon who nobody returned</p>
+                      </div>
+                    </li>
+                    <hr size="5" color="white" width="80%" align="left">
+                    <li class="media">
+                      <img src="data/photo/slider/TheSin.jpg" class="mr-3" alt="...">
+                      <div class="media-body">
+                        <h5 class="mt-0 mb-1">ROLL DICE</h5>
+                        <p>A software that allows you to roll different types of dices</p>
+                      </div>
+                    </li>
+                  </ul>
+            </section>
+            <section>
+                <h3>CONTACT</h3>
+                <hr size="5" color="white" width="80%" align="left">
+                <p>
+                    Email: <br/>
+                    <a href="Avsoft.studio@gmail.com">Avsoft.studio@gmail.com</a><br/>
+                    Twitter :<br/>
+                    <a href="https://twitter.com/AvsoftS">https://twitter.com/AvsoftS</a><br/>
+                    Itch.io :<br/>
+                    <a href="https://avsoft-studio.itch.io/">https://avsoft-studio.itch.io/</a><br/>
+                    Discord : <br/>
+                    <a href="https://discord.gg/9fPh3Mt">https://discord.gg/9fPh3Mt</a>
+                </p>
+                <hr size="5" color="white" width="80%" align="left">
             </section>
         </footer>
     </body>
