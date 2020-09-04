@@ -1,16 +1,17 @@
 /*Fonctionnalités CSS commune à toute les pages*/
 body{background-image: url("../data/photo/fond.gif");}
 header{background-color: black;opacity: 0.75;}
-footer{
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-}
+header div{width: 80%;margin-right: auto;margin-left: auto; display: grid;grid-template-columns: 1fr 2fr;}
+footer .grid{display: grid;grid-template-columns: repeat(3, 1fr);width: 80%;margin-left: auto;margin-right: auto;}
 footer section ul li img{width: 75px;height: 75px;overflow-x: hidden;overflow-y: hidden;}
 footer section ul li p{width: 75%;}
-footer h3{color: white;margin-top: 25px;}
-footer p{color: white;}
-footer h5{color: dodgerblue;}
+footer section div p{width: 75%;}
+footer section div button{margin-bottom: 25px;}
+footer h3{color: white;margin-top: 25px;font-size: x-large;}
+footer p{color: white; font-size: small;}
+footer h5{color: dodgerblue;font-size: medium;}
 .blocOpaque {width:100%;height:100%;margin:0px 0px;background-color:black;border:1px solid black;filter:Alpha(opacity=80);-moz-opacity:0.80;opacity: 0.80;}
+.blocWhiteOpaque {width:100%;height:100%;margin:0px 0px;background-color:white;border:1px solid white;filter:Alpha(opacity=80);-moz-opacity:0.80;opacity: 0.80;}
 /******************************************************************************************************************/
 /*Fonctionnalités CSS de la page Accueil*/
 /*BLOC PRESENTATION*/
@@ -19,8 +20,20 @@ footer h5{color: dodgerblue;}
 #presentation p{font-size: larger;color: white;margin-left: 25px;margin-right: 15px;}
 #slides h4{color: black;}
 /*BLOC BANDEROLLE*/
-#banderolle{height: 200px;}
-
+#banderolle{height: 220px;}
+#banderolle div{width: 80%;height: 220px; margin-right: auto;margin-left: auto;display: grid;grid-template-columns: 1fr 55% 1fr;}
+#banderolle div section{height: 220px;}
+#banderolle div section h3 {text-align: center;height: 150px;margin-top: 15px;}
+#banderolle div section p{height: 120px;overflow-y: auto;margin-left: 15px;margin-right: 15px;margin-top: 15px;color: white;}
+#banderolle div section #more{margin-left: 15px;}
+#banderolle div #link{text-align: center;}
+/*BLOC CONTENT*/
+#content{width: 80%;margin-right: auto;margin-left: auto;display: grid;grid-template-columns: repeat(3, 1fr);}
+#content section div p{color: white; margin-top: 10px;width: 75%;margin-left: 5px;font-size: medium;min-height: 100%;}
+#content section div img{width: 80%;}
+/*BLOC BOUTON*/
+#boutons{width:80%;margin-left: auto;margin-right: auto;display: grid;grid-template-columns: repeat(3, 1fr);}
+#boutons button{width: 30%;margin-bottom: 10px;}
 /******************************************************************************************************************/
 /*Fonctionnalités CSS de la page Contact*/
 #contact{
