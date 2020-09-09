@@ -1,8 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <meta charset="utf-8" />
+        <!--Ensemble des métadonnées de la pages et du site web-->
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="Content-Type" content="UTF-8">
+        <meta name="Content-Language" content="fr">
+        <meta name="description" content="présentation de l'entreprise Avsoft Studio">
+        <meta name="keywords" content="development, programming, langages, games, softwares, avsoft, studio">
+        <meta name="author" content="Avsoft Studio">
+        <meta name="copyright" content="Musique & Culture">
+        <meta name="Subject" content="Computer Science">
+        <meta name="Robots" content="all">
+        <meta name="Rating" content="general">
+        <meta name="Distribution" content="global">
+        <meta name="Geography" content="Vernoux-en-Vivarais, france, 07240">
+        <meta name="Category" content="engineering">
         <!--Import des fonctionnalités bootstrap-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -12,35 +25,43 @@
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/ModifBootstrap.css"/>
         <script src="js/accueil.js" defer></script>
+        <script type="text/javascript" src="js/DataManager/footer.js" defer></script>
         <!--<link rel="icon" href="images/favicon.ico" type="image/x-icon"/>-->
         <title>Avsoft Studio - Site officiel</title>
     </head>
     <body>
         <header>
             <div>
-                <section>
-                    <img src="data/photo/Logo/Logo.png" alt="Logo_Avsoft" class="rounded" width="150">
+                <section itemscope itemtype="https://schema.org/Brand">
+                    <img itemprop="logo" src="data/photo/Logo/Logo.png" alt="Logo_Avsoft" class="rounded" width="150">
                 </section>
                 <section>
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item">
-                          <a class="nav-link active" href="">HOME</a>
+                    <ul itemscope itemtype="https://schema.org/ListItem" class="nav justify-content-end">
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Thing" class="nav-item">
+                          <a itemprop="url" class="nav-link active" href=""><span itemprop="name">HOME</span></a>
+                          <meta itemprop="position" content="1"/>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">GAMES</a>
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Thing" class="nav-item">
+                          <a itemprop="url" class="nav-link" href="#"><span itemprop="name">GAMES</span></a>
+                          <meta itemprop="position" content="2" />
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">SOFTWARES</a>
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Thing" class="nav-item">
+                          <a itemprop="url" class="nav-link" href="#"><span itemprop="name">SOFTWARES</span></a>
+                          <meta itemprop="position" content="3" />
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">OTHERS</a>
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Thing" class="nav-item">
+                            <a itemprop="url" class="nav-link" href="#"><span itemprop="name">OTHERS</span></a>
+                            <meta itemprop="position" content="4" />
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT US</a>
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Thing" class="nav-item">
+                            <a itemprop="url" class="nav-link" href="#"><span itemprop="name">ABOUT US</span></a>
+                            <meta itemprop="position" content="5" />
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="html/contact.html">CONTACT</a>
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/Thing" class="nav-item">
+                            <a itemprop="url" class="nav-link" href="html/contact.html"><span itemprop="name">CONTACT</span></a>
+                            <meta itemprop="position" content="6" />
                         </li>
+                        <meta itemprop="name" content="Navigation Menu"/>
                     </ul>
                 </section>
             </div>
@@ -57,28 +78,28 @@
                     </ol>
                     <div class="carousel-inner" data-interval="5000">
                         <div id="slides" class="carousel-item active">
-                            <img src="data/photo/slider/Logo.png" class="d-block w-100" alt="...">
+                            <img src="data/photo/slider/Logo.png" class="d-block w-100" title="Logo Avsoft Studio" alt="Logo Avsoft Studio">
                         </div>
                         <div id="slides" class="carousel-item" data-interval="5000">
-                            <img src="data/photo/slider/TheSin.jpg" class="d-block w-100" alt="...">
+                            <img src="data/photo/slider/TheSin.jpg" class="d-block w-100" title="The Sin presentation" alt="The Sin presentation">
                             <div class="carousel-caption d-none d-md-block">
                                 <h4>The Sin</h4>
                             </div>
                         </div>
                         <div id="slides" class="carousel-item" data-interval="5000">
-                            <img src="data/photo/slider/RollDice.jpg" class="d-block w-100" alt="...">
+                            <img src="data/photo/slider/RollDice.jpg" class="d-block w-100" title="Picture of the software Roll Dice" alt="Picture of the software Roll Dice">
                             <div class="carousel-caption d-none d-md-block">
                                 <h4>Roll Dice</h4>
                             </div>
                         </div>
                         <div id="slides" class="carousel-item" data-interval="5000">
-                            <img src="data/photo/slider/TheSin2.jpg" class="d-block w-100" alt="...">
+                            <img src="data/photo/slider/TheSin2.jpg" class="d-block w-100" title="Fight in The Sin" alt="Fight in The sin">
                             <div class="carousel-caption d-none d-md-block">
                                 <h4>Fight in The Sin</h4>
                             </div>
                         </div>
                         <div id="slides" class="carousel-item" data-interval="5000">
-                            <img src="data/photo/slider/Code.jpg" class="d-block w-100" alt="...">
+                            <img src="data/photo/slider/Code.jpg" class="d-block w-100" title="Code" alt="Code">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -127,7 +148,7 @@
                     <h3 style="color: dodgerblue;">GAMES DEVELOPMENT</h3>
                     <hr size="5" color="white" width="80%" align="left">
                     <div>
-                        <img src="data/photo/map.jpg" alt="...">
+                        <img src="data/photo/map.jpg" title="Création of a map on RPG Maker" alt="Création of a map on RPG Maker">
                         <p>
                             We create our games with different languages and software (check the "ABOUT US" to see them).
                             We design various type of games (RPG, FPS, etc...). Go on the games page to see the list of 
@@ -139,7 +160,7 @@
                     <h3 style="color: dodgerblue;">IN DEVELOPMENT</h3>
                     <hr size="5" color="white" width="80%" align="left">
                     <div>
-                        <img src="data/photo/slider/Code.jpg" alt="...">
+                        <img src="data/photo/slider/Code.jpg" title="Code" alt="Code">
                         <p>
                             Also with our projects of games, we create some softwares in order to improve us on the different
                             computer languages and to simplify certain of our activities.
@@ -150,7 +171,7 @@
                     <h3 style="color: dodgerblue;">WE ARE ON YOUTUBE</h3>
                     <hr size="5" color="white" width="80%" align="left">
                     <div>
-                        <img src="data/photo/ytb.png" alt="...">
+                        <img src="data/photo/ytb.png" title="YouTube Logo" alt="YouTube Logo">
                         <p>
                             Take a look on our YouTube channel. We will publish some videos about the progress on our projects
                             but also trailer, video of Gameplay and many others things !
@@ -167,36 +188,16 @@
         <footer class="blocOpaque">
             <div class="grid">
                 <section>
-                    <h3>WHAT'S UP ?</h3>
+                    <h3>WHAT'S UP ?</h3> 
                     <hr size="5" color="white" width="80%" align="left">
-                    <div class="media-body">
-                        <h5 class="mt-0 mb-1">CURRENT PROJECT</h5>
-                        <p>
-                            Currently, we develop the new version of Roll Dice, our software that allows you to roll different type of dices.
-                            Also new features will be available on this new version.
-                        </p>
-                        <p>
-                            In parallel, we develop a game on RPG Maker MV named HighTower. It will be available on web, Windows, Mac and Linux.
-                            More information on the dedicated page !
-                        </p>
-                    </div>
+                    <div itemscope itemtype="https://schema.org/Article" id="wup1" class="media-body"></div> <!--Créer les meta données dans le fichier Javacript-->
                     <hr size="5" color="white" width="80%" align="left">
-                    <div class="media-body">
-                        <h5 class="mt-0 mb-1">A WEBSITE WITH ANGULAR</h5>
-                        <p>
-                            We try to develop a complete website with the framework Angular released by a team of Google. This last
-                            was based on Typescript programming language in order to develop the front part or single page application.
-                        </p>
-                        <p>
-                            This development is available on YouTube with a serie of videos
-                        </p>
-                        <button type="button" class="btn-primary">WATCH VIDEOS</button>
-                    </div>
+                    <div itemscope itemtype="https://schema.org/Article" id="wup2" class="media-body"></div> <!--Créer les meta données dans le fichier Javacript-->
                 </section>
-                <section>
+                <section id="Development">
                     <h3>IN DEVELOPMENT</h3>
                     <hr size="5" color="white" width="80%" align="left">
-                    <ul class="list-unstyled">
+                    <ul class="list-unstyled" itemscope itemtype="https://schema.org/ListItem">
                         <li class="media">
                           <img src="data/photo/CSE.png" class="mr-3" alt="...">
                           <div class="media-body">
@@ -223,34 +224,12 @@
                         </li>
                       </ul>
                 </section>
-                <section>
+                <section id="Contact">
                     <h3>CONTACT</h3>
                     <hr size="5" color="white" width="80%" align="left">
-                    <p>
-                        Email: <br/>
-                        <a href="Avsoft.studio@gmail.com">Avsoft.studio@gmail.com</a><br/>
-                        Twitter :<br/>
-                        <a href="https://twitter.com/AvsoftS">https://twitter.com/AvsoftS</a><br/>
-                        Itch.io :<br/>
-                        <a href="https://avsoft-studio.itch.io/">https://avsoft-studio.itch.io/</a><br/>
-                        Discord : <br/>
-                        <a href="https://discord.gg/9fPh3Mt">https://discord.gg/9fPh3Mt</a>
-                    </p>
+                    <p itemscope itemtype="https://schema.org/Text"></p>
                     <hr size="5" color="white" width="80%" align="left">
-                    <nav class="navbar navbar-light bg-light">
-                        <a class="navbar-brand" href="#">
-                            <img src="data/photo/ytb.png" width="30" height="30" alt="" loading="lazy">
-                        </a>
-                        <a class="navbar-brand" href="#">
-                          <img src="data/photo/SocialNetwork/Discord.png" width="30" height="30" alt="" loading="lazy">
-                        </a>
-                        <a class="navbar-brand" href="#">
-                          <img src="data/photo/SocialNetwork/itchio.png" width="30" height="30" alt="" loading="lazy">
-                        </a>
-                        <a class="navbar-brand" href="#">
-                          <img src="data/photo/SocialNetwork/Twitter.jpg" width="30" height="30" alt="" loading="lazy">
-                        </a>
-                      </nav>
+                    <nav class="navbar navbar-light bg-light" itemscope itemtype="https://schema.org/ListItem"></nav>
                 </section>
             </div>
         </footer>

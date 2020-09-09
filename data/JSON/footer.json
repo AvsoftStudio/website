@@ -1,0 +1,40 @@
+{
+   "development": {
+      "title": [
+         ["CHARACTER SHEET EDITOR", "data/photo/CSE.png", "A software which allows you to create character's sheet for RPG games."],
+         ["HIGHTOWER", "", ""],
+         ["ROLL DICE", "", ""]
+      ],
+      "pictures": [
+         "data/photo/CSE.png",
+         "data/photo/Tower2.png",
+         "data/photo/slider/TheSin.jpg"
+      ],
+      "text": [
+         "A software which allows you to create character's sheet for RPG games.",
+         "A team of old friends decided to fulfill their chilhood dream !<br/>Climb the HighTower, a dungeon who nobody returned",
+         "A software that allows you to roll different types of dices"
+      ]
+   },
+   "wup": {
+      "title": [
+         "CURRENT PROJECT",
+         "A WEBSITE WITH ANGULAR"
+      ],
+      "text": [
+         "<p>Currently, we develop the new version of Roll Dice, our software that allows you to roll different type of dices. Also new features will be available on this new version.</p><p>In parallel, we develop a game on RPG Maker MV named HighTower. It will be available on web, Windows, Mac and Linux.<br/>More information on the dedicated page !</p>",
+         "<p>We try to develop a complete website with the framework Angular released by a team of Google. This last was based on Typescript programming language in order to develop the front part or single page application</p><p>This development is available on YouTube with a serie of videos</p>"
+      ],
+      "bouton": [
+         "",
+         "<button type='button' class='btn-primary'>WATCH VIDEOS</button>"
+      ]
+   },
+   "contact": [
+         ["Mail", "avsoft.studio@outlook.fr", ""],
+         ["Twitter","https://twitter.com/AvsoftS", "data/photo/SocialNetwork/Twitter.jpg"],
+         ["Itch.io", "https://avsoft-studio.itch.io/", "data/photo/SocialNetwork/itchio.png"],
+         ["Discord", "https://discord.gg/9fPh3Mt", "data/photo/SocialNetwork/Discord.png"],
+         ["Youtube", "https://www.youtube.com/channel/UC8lmdkXkpIAIFgZfR2jGP8A", "data/photo/ytb.png"]
+   ]
+}
